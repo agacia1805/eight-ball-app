@@ -1,5 +1,5 @@
 export default function Footer() {
-const navigation = [
+  const navigation = [
     {
       name: 'GitHub',
       href: 'https://github.com/agacia1805',
