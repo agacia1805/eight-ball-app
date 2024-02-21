@@ -1,187 +1,111 @@
 const randomizedWords = [
   {
-    word: '',
-    language: '',
-    description: '',
+    word: 'fernweh',
+    language: 'German',
+    description: 'feeling homesick for a place you have never been to',
   },
   {
-    word: '',
-    language: '',
-    description: '',
+    word: 'komorebi',
+    language: 'Japanese',
+    description:
+      'rays of light dappling through overhead leaves, casting dancing shadows on the forest floor',
   },
   {
-    word: '',
-    language: '',
-    description: '',
+    word: 'tingo',
+    language: 'Pascuense',
+    description:
+      "to gradually steal all the possession out of a neighbour'/s house by borrowing and not returning",
   },
   {
-    word: '',
-    language: '',
-    description: '',
+    word: 'pochemuchka',
+    language: 'Russian',
+    description: 'a person who asks too many questions',
   },
   {
-    word: '',
-    language: '',
-    description: '',
+    word: 'gökotta',
+    language: 'Swedish',
+    description:
+      'to wake up in the morning with the purpose of going outside to hear the first birds sing',
   },
   {
-    word: '',
-    language: '',
-    description: '',
+    word: 'bakku-shan',
+    language: 'Japanese',
+    description: 'a beautiful girl as long as she is being viewed from behind',
   },
   {
-    word: '',
-    language: '',
-    description: '',
+    word: 'backpfeifengesicht',
+    language: 'German',
+    description: 'a face that is badly in need of a fist',
   },
   {
-    word: '',
-    language: '',
-    description: '',
+    word: 'aware',
+    language: 'Japanese',
+    description:
+      'the bittersweet feeling of a brief and fading moment of transcendent beauty',
   },
   {
-    word: '',
-    language: '',
-    description: '',
+    word: 'tsundoku',
+    language: 'Japanese',
+    description:
+      'the act of leaving a book unread after buying it, typically piling it up together with other unread books',
   },
   {
-    word: '',
-    language: '',
-    description: '',
+    word: 'shlimazl',
+    language: 'Yiddish',
+    description: 'a chronically unlucky person',
   },
   {
-    word: '',
-    language: '',
-    description: '',
+    word: 'waldeinsamkeit',
+    language: 'German',
+    description: 'the feeling of being alone in the woods',
   },
   {
-    word: '',
-    language: '',
-    description: '',
+    word: 'hanyauku',
+    language: 'Rukwangali',
+    description: 'the act of walking on tiptoes across warm sand',
   },
   {
-    word: '',
-    language: '',
-    description: '',
+    word: 'gattara',
+    language: 'Italian',
+    description:
+      'a woman, often old and lonely, who devotes herself to stray cats',
   },
   {
-    word: '',
-    language: '',
-    description: '',
+    word: 'iktsuarpok',
+    language: 'Inuit',
+    description: 'the frustration of waiting for someone to turn up',
   },
   {
-    word: '',
-    language: '',
-    description: '',
+    word: 'friolero',
+    language: 'Spanish',
+    description:
+      'a person who is especially sensitive to cold weather and temperatures',
   },
   {
-    word: '',
-    language: '',
-    description: '',
+    word: 'schilderwald',
+    language: 'German',
+    description:
+      'a street crowded with so many road signs that you become lost',
   },
   {
-    word: '',
-    language: '',
-    description: '',
-  },
-  {
-    word: '',
-    language: '',
-    description: '',
-  },
-  {
-    word: '',
-    language: '',
-    description: '',
-  },
-  {
-    word: '',
-    language: '',
-    description: '',
-  },
-  {
-    word: '',
-    language: '',
-    description: '',
-  },
-  {
-    word: '',
-    language: '',
-    description: '',
-  },
-  {
-    word: '',
-    language: '',
-    description: '',
-  },
-  {
-    word: '',
-    language: '',
-    description: '',
-  },
-  {
-    word: '',
-    language: '',
-    description: '',
-  },
-  {
-    word: '',
-    language: '',
-    description: '',
-  },
-  {
-    word: '',
-    language: '',
-    description: '',
-  },
-  {
-    word: '',
-    language: '',
-    description: '',
-  },
-  {
-    word: '',
-    language: '',
-    description: '',
-  },
-  {
-    word: '',
-    language: '',
-    description: '',
-  },
-  {
-    word: '',
-    language: '',
-    description: '',
-  },
-  {
-    word: '',
-    language: '',
-    description: '',
-  },
-  {
-    word: '',
-    language: '',
-    description: '',
-  },
-  {
-    word: '',
-    language: '',
-    description: '',
-  },
-  {
-    word: '',
-    language: '',
-    description: '',
-  },
-  {
-    word: '',
-    language: '',
-    description: '',
-  },
-  {
-    word: '',
-    language: '',
-    description: '',
+    word: 'utepils',
+    language: 'Norwegian',
+    description: 'to sit outside on a sunny day enjoying a beer',
   },
 ];
+
+const randomizedProphecies = [
+  {
+    title: 'test',
+    content: 'feeling homesick for a place you have never been to',
+  },
+  {
+    title: 'test 2',
+    content: 'feeling homesick for a place you have never been to',
+  },
+];
+
+module.exports = {
+  randomizedProphecies,
+  randomizedWords,
+};
