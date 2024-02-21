@@ -24,7 +24,7 @@ async function seedRandomizedWords(client) {
         (wordData) => client.sql`
             INSERT INTO randomizedWords (word, language, description)
             VALUES (${wordData.word}, ${wordData.language}, ${wordData.description})
-                ON CONFLICT DO NOTHING;
+                ON CONFLICT (id) DO NOTHING;
       `
       )
     );
@@ -60,7 +60,7 @@ async function seedRandomizedProphecies(client) {
         (prophecyData) => client.sql`
             INSERT INTO randomizedProphecies (title, content)
             VALUES (${prophecyData.title}, ${prophecyData.content})
-                ON CONFLICT DO NOTHING;
+                ON CONFLICT (id) DO NOTHING;
         `
       )
     );
