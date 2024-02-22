@@ -6,9 +6,8 @@ export async function fetchRandomizedWord() {
   noStore();
 
   try {
-    const data = await sql<RandomizedWord>
-     `SELECT * FROM randomizedWords`;
-     return data.rows;
+    const data = await sql<RandomizedWord>`SELECT * FROM randomizedWords`;
+    return data.rows;
   } catch (error) {
     console.error('Database Error:', error);
     throw new Error('Failed to fetch randomized word data.');
@@ -19,9 +18,9 @@ export async function fetchRandomizedProphecy() {
   noStore();
 
   try {
-    const data = await sql<RandomizedProphecy>
-    `SELECT * FROM randomizedProphecies`;
-     return data.rows;
+    const data =
+      await sql<RandomizedProphecy>`SELECT * FROM randomizedProphecies`;
+    return data.rows;
   } catch (error) {
     console.error('Database Error:', error);
     throw new Error('Failed to fetch randomized prophecies data.');

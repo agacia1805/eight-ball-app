@@ -3,7 +3,7 @@ import Word from '@/app/ui/word';
 
 export default function Home() {
   return (
-    <main>
+    <main className='p-6'>
       <Word />
       <Prophecy />
     </main>
