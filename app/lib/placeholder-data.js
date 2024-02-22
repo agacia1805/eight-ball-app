@@ -96,12 +96,37 @@ const randomizedWords = [
 
 const randomizedProphecies = [
   {
-    title: 'test',
-    content: 'feeling homesick for a place you have never been to',
+    title: 'A note on life',
+    content:
+      'But life is very short and anxious for those who forget the past, neglect the present, and fear the future',
   },
   {
-    title: 'test 2',
-    content: 'feeling homesick for a place you have never been to',
+    title: 'Your tomorrow',
+    content:
+      'Tomorrow is tomorrow. Future cares have future cures, And we must mind today',
+  },
+  {
+    title: 'Your future',
+    content:
+      'As for the future, your task is not to foresee it, but to enable it',
+  },
+  {
+    title: 'Plant well',
+    content:
+      'Don’t judge each day by the harvest you reap but by the seeds that you plant',
+  },
+  {
+    title: 'Dream a little',
+    content: 'Dream lofty dreams, and as you dream, so you shall become',
+  },
+  {
+    title: 'Keep your past',
+    content:
+      'Deleting a piece from the past is like deleting a corresponding piece from the future',
+  },
+  {
+    title: 'Wait',
+    content: 'The day will come…',
   },
 ];
 
