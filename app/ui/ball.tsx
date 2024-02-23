@@ -9,7 +9,6 @@ export default function Ball() {
         className='sphere flex items-center justify-center'
         drag
         dragConstraints={{ left: -100, right: 100 }}
-        drag='x'
         animate={{
           rotateX: [0, 360],
           rotateY: [0, 360],
