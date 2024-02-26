@@ -13,7 +13,7 @@ export default async function Prophecy() {
   if (!randomProphecy) return null;
 
   return (
-    <div className='flex flex-col gap-2 text-gray-50 md:max-w-2xl'>
+    <div className='flex w-10/12 flex-col gap-2 text-gray-50'>
       <p
         className={`${robotoSlab.className} semibold text-center text-3xl capitalize`}
       >

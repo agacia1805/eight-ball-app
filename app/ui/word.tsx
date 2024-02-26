@@ -13,7 +13,7 @@ export default async function Word() {
   if (!randomWord) return null;
 
   return (
-    <div className='flex flex-col gap-2 text-gray-50 md:max-w-2xl'>
+    <div className='flex w-10/12 flex-col gap-2 text-gray-50'>
       <p className='text-center'>
         <span
           className={`${robotoSlab.className} semibold text-4xl capitalize`}
