@@ -114,11 +114,11 @@ body {
 
 .ball-v1::before {
   background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.2) 0%,
-    rgba(0, 0, 0, 0) 50%
-  ),
-  radial-gradient(circle at 30% 30%, #171c79, transparent);
+      to right,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0) 50%
+    ),
+    radial-gradient(circle at 30% 30%, #171c79, transparent);
   transform: translateZ(-1px);
   box-shadow:
     4px 0 20px rgba(38, 142, 142, 0.87),
@@ -129,23 +129,25 @@ body {
 
 .ball-v1::after {
   background: linear-gradient(
-    to right,
-    rgba(34, 55, 67, 0) 50%,
-    rgb(3, 21, 37) 100%
-  ),
-  radial-gradient(circle at 70% 40%, #8b4710, transparent);
+      to right,
+      rgba(34, 55, 67, 0) 50%,
+      rgb(3, 21, 37) 100%
+    ),
+    radial-gradient(circle at 70% 40%, #8b4710, transparent);
   opacity: 30%;
   transform: translateZ(1px);
-  box-shadow: 0 0 40px rgba(167, 203, 222, 0.67), -3px 0 40px rgba(167, 203, 222, 0.67);
+  box-shadow:
+    0 0 40px rgba(167, 203, 222, 0.67),
+    -3px 0 40px rgba(167, 203, 222, 0.67);
 }
 
 .ball-v2::before {
   background: linear-gradient(
-    to right,
-    rgba(46, 8, 15, 0.49) 0%,
-    rgba(37, 28, 36, 0.29) 50%
-  ),
-  radial-gradient(circle at 30% 30%, rgba(155, 127, 146, 0.74), transparent);
+      to right,
+      rgba(46, 8, 15, 0.49) 0%,
+      rgba(37, 28, 36, 0.29) 50%
+    ),
+    radial-gradient(circle at 30% 30%, rgba(155, 127, 146, 0.74), transparent);
   transform: translateZ(-1px);
   box-shadow:
     4px 0 20px rgba(155, 127, 146, 0.21),
@@ -156,12 +158,14 @@ body {
 
 .ball-v2::after {
   background: linear-gradient(
-    to right,
-    rgba(70, 50, 65, 0.74) 50%,
-    rgba(40, 20, 33, 0.74) 100%
-  ),
-  radial-gradient(circle at 70% 40%, #8b4710, transparent);
+      to right,
+      rgba(70, 50, 65, 0.74) 50%,
+      rgba(40, 20, 33, 0.74) 100%
+    ),
+    radial-gradient(circle at 70% 40%, #8b4710, transparent);
   opacity: 30%;
   transform: translateZ(1px);
-  box-shadow: 0 0 40px rgba(49, 14, 38, 0.9), -3px 0 40px rgba(37, 5, 27, 0.94);
+  box-shadow:
+    0 0 40px rgba(49, 14, 38, 0.9),
+    -3px 0 40px rgba(37, 5, 27, 0.94);
 }
