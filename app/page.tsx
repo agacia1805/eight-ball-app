@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function Home(s) {
+export default function Home() {
   return (
     <main className='mx-auto my-0 flex flex-col gap-16 p-4 md:gap-24'>
       <div className='ball static-ball flex items-center justify-center'>
