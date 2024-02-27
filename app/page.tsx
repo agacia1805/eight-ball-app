@@ -1,10 +1,14 @@
 import Link from 'next/link';
+import { Rajdhani } from 'next/font/google';
+
+const rajdhani = Rajdhani({ weight: ['400', '700'],subsets: ['latin'] });
 
 export default function Home() {
   return (
-    <main className='mx-auto my-0 flex flex-col gap-16 p-4 md:gap-24'>
-      <div className='ball static-ball flex items-center justify-center'>
-        <span>Choose mode and shake the ball</span>
+    <main className='mx-auto my-0 flex flex-col gap-16 pt-36 md:gap-24'>
+      <div className='ball static-ball flex flex-col gap-1 md:gap-2 items-center justify-center text-black'>
+        <span className={`${rajdhani.className} text-center font-semibold text-2xl md:text-3xl`}>Choose mode.</span>
+        <span className={`${rajdhani.className} text-center font-bold text-3xl md:text-5xl`}>Shake the ball.</span>
       </div>
       <div className='flex flex-col items-center gap-6 md:flex-row md:justify-center md:gap-16'>
         <Link
