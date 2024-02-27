@@ -24,6 +24,8 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  margin: 0;
+  padding: 0;
 }
 
 @layer utilities {
@@ -80,8 +82,8 @@ body {
 .ball-v2 {
   background: radial-gradient(
     circle at 50% 120%,
-    rgba(141, 64, 137, 0.7),
-    rgba(47, 17, 49, 0.47)
+    rgba(139, 23, 133, 0.7),
+    rgba(28, 5, 30, 0.47)
   );
 }
 
@@ -144,25 +146,25 @@ body {
 .ball-v2::before {
   background: linear-gradient(
       to right,
-      rgba(46, 8, 15, 0.49) 0%,
-      rgba(37, 28, 36, 0.29) 50%
+      rgba(18, 3, 5, 0.49) 0%,
+      rgba(26, 15, 25, 0.29) 50%
     ),
-    radial-gradient(circle at 30% 30%, rgba(155, 127, 146, 0.74), transparent);
+    radial-gradient(circle at 30% 30%, rgba(40, 3, 29, 0.44), transparent);
   transform: translateZ(-1px);
   box-shadow:
-    4px 0 20px rgba(155, 127, 146, 0.21),
+    4px 0 20px rgba(186, 88, 155, 0.21),
     -2px 0 20px rgba(39, 3, 36, 0.11),
-    4px 0 10px rgba(155, 127, 146, 0.2),
-    -2px 0 40px rgba(155, 127, 146, 0.74);
+    4px 0 10px rgba(229, 69, 181, 0.2),
+    -2px 0 40px rgba(174, 149, 166, 0.74);
 }
 
 .ball-v2::after {
   background: linear-gradient(
       to right,
       rgba(70, 50, 65, 0.74) 50%,
-      rgba(40, 20, 33, 0.74) 100%
+      rgba(148, 77, 123, 0.74) 100%
     ),
-    radial-gradient(circle at 70% 40%, #8b4710, transparent);
+    radial-gradient(circle at 70% 40%, #e57014, transparent);
   opacity: 30%;
   transform: translateZ(1px);
   box-shadow:
