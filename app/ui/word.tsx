@@ -1,25 +1,42 @@
+'use client';
+
 import { getRandomElement } from '@/app/lib/utils';
 import { RandomizedWord } from '@/app/lib/definitions';
 import { Rajdhani } from 'next/font/google';
+import { useMemo } from 'react';
 
-const rajdhani = Rajdhani({ weight: ['400', '700'],subsets: ['latin'] });
+const rajdhani = Rajdhani({ weight: ['400', '700'], subsets: ['latin'] });
 
-export default function Word({words}: RandomizedWord[]) {
-  const randomWord = getRandomElement(words);
+export default function Word({
+  words,
+  isBallClicked,
+  ballClickCount,
+}: {
+  words: RandomizedWord[];
+  isBallClicked: boolean;
+  ballClickCount: number;
+}) {
+  const randomWord = useMemo(() => {
+    if (isBallClicked) return getRandomElement(words);
+  }, [ballClickCount, isBallClicked]);
 
   if (!randomWord) return null;
 
   return (
-    <div className='flex flex-col gap-2 text-gray-50 items-center'>
+    <div className='flex flex-col items-center gap-2 text-gray-50'>
       <p className='text-center'>
         <span
-          className={`${rajdhani.className} text-white text-center font-bold text-3xl md:text-6xl capitalize`}
+          className={`${rajdhani.className} text-center text-3xl font-bold capitalize text-white md:text-6xl`}
         >
           {randomWord.word}
         </span>{' '}
-        <span className='text-base hidden md:inline-block italic'>({randomWord.language})</span>
+        <span className='hidden text-base italic md:inline-block'>
+          ({randomWord.language})
+        </span>
       </p>
-      <p className='text-center text-sm md:text-xl w-10/12 md:w-8/12 text-gray-200'>{randomWord.description}</p>
+      <p className='w-10/12 text-center text-sm text-gray-200 md:w-8/12 md:text-xl'>
+        {randomWord.description}
+      </p>
     </div>
   );
 }
