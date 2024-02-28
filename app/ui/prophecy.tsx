@@ -1,11 +1,10 @@
-import { fetchRandomizedProphecy } from '@/app/lib/data';
 import { getRandomElement } from '@/app/lib/utils';
+import { RandomizedProphecy } from '@/app/lib/definitions';
 import { Rajdhani } from 'next/font/google';
 
 const rajdhani = Rajdhani({ weight: ['400', '700'],subsets: ['latin'] });
 
-export default async function Prophecy() {
-  const prophecies = await fetchRandomizedProphecy();
+export default function Prophecy({prophecies}: RandomizedProphecy[]) {
   const randomProphecy = getRandomElement(prophecies);
 
   if (!randomProphecy) return null;
