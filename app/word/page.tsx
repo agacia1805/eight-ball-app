@@ -8,7 +8,7 @@ export default async function Page() {
   return (
     <main className='mx-auto my-0 p-4'>
       <Ball className='ball-v1'>
-        <Word words={words}/>
+        <Word words={words} />
       </Ball>
     </main>
   );
