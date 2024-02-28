@@ -13,8 +13,8 @@ export default function Word({
   ballClickCount,
 }: {
   words: RandomizedWord[];
-  isBallClicked: boolean;
-  ballClickCount: number;
+  isBallClicked?: boolean;
+  ballClickCount?: number;
 }) {
   const randomWord = useMemo(() => {
     if (isBallClicked) return getRandomElement(words);

@@ -1,13 +1,13 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import React, { useState } from 'react';
+import React, { ReactNode, ReactElement, useState } from 'react';
 
 export default function Ball({
   children,
   className,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
   className: string;
 }) {
   const [isBallClicked, setIsBallClicked] = useState<boolean>(false);
@@ -18,15 +18,23 @@ export default function Ball({
     setBallClickCount((prevCount) => prevCount + 1);
   };
 
+  const childArray = React.Children.toArray(children);
+
   return (
     <div className='container'>
       <motion.div
         className={`${className} ball flex cursor-pointer select-none items-center justify-center`}
         onClick={handleBallClick}
       >
-        {React.Children.map(children, (child: React.ReactElement) =>
-          React.cloneElement(child, { isBallClicked, ballClickCount })
-        )}
+        {React.Children.map(childArray, (child: ReactNode) => {
+          if (React.isValidElement(child)) {
+            return React.cloneElement(child as ReactElement, {
+              isBallClicked,
+              ballClickCount,
+            });
+          }
+          return child;
+        })}
       </motion.div>
     </div>
   );
