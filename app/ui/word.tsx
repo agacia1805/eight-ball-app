@@ -1,11 +1,10 @@
-import { fetchRandomizedWord } from '@/app/lib/data';
 import { getRandomElement } from '@/app/lib/utils';
+import { RandomizedWord } from '@/app/lib/definitions';
 import { Rajdhani } from 'next/font/google';
 
 const rajdhani = Rajdhani({ weight: ['400', '700'],subsets: ['latin'] });
 
-export default async function Word() {
-  const words = await fetchRandomizedWord();
+export default function Word({words}: RandomizedWord[]) {
   const randomWord = getRandomElement(words);
 
   if (!randomWord) return null;
