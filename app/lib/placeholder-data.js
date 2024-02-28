@@ -14,7 +14,7 @@ const randomizedWords = [
     word: 'tingo',
     language: 'Pascuense',
     description:
-      "to gradually steal all the possession out of a neighbour'/s house by borrowing and not returning",
+      'to gradually steal all the possession out of a neighbour’s house by borrowing and not returning',
   },
   {
     word: 'pochemuchka',
@@ -92,6 +92,118 @@ const randomizedWords = [
     language: 'Norwegian',
     description: 'to sit outside on a sunny day enjoying a beer',
   },
+  {
+    word: 'jaysus',
+    language: 'Indonesian',
+    description: 'an unfunny joke that’s told so badly that you actually laugh',
+  },
+  {
+    word: 'tartle',
+    language: 'Scottish',
+    description:
+      'the hesitation before introducing someone when you’ve forgotten their name',
+  },
+  {
+    word: 'mångata',
+    language: 'Spanish',
+    description: 'the trail created by the moon’s reflection on water',
+  },
+  {
+    word: 'kilig',
+    language: 'Tagalog',
+    description:
+      'the feeling of butterflies in your stomach specifically associated with romance',
+  },
+  {
+    word: 'flâner',
+    language: 'French',
+    description:
+      'aimlessly wandering without any destination, just to enjoy the views',
+  },
+  {
+    word: 'merak',
+    language: 'Serbian',
+    description:
+      'the feeling you get from simple pleasures that adds up to a sense of happiness and fulfilment',
+  },
+  {
+    word: 'gluggaveður',
+    language: 'Icelandic',
+    description: 'weather that looks beautiful but is unpleasant to be in',
+  },
+  {
+    word: 'saudade',
+    language: 'Portuguese',
+    description: 'the longing for something beautiful that’s now gone',
+  },
+  {
+    word: 'dustsceawung',
+    language: 'Old English',
+    description:
+      'the realisation that everything will ultimately end up as dust',
+  },
+  {
+    word: 'verschlimmbessern',
+    language: 'German',
+    description:
+      'accidentally making things worse when trying to mend or improve it',
+  },
+  {
+    word: 'culacinno',
+    language: 'Italian',
+    description: 'the ring left on a table from a moist glass',
+  },
+  {
+    word: 'won',
+    language: 'Korean',
+    description: 'reluctance to let go of an illusion',
+  },
+  {
+    word: 'yuánfèn',
+    language: 'Mandarin',
+    description: 'the fate between two people',
+  },
+  {
+    word: 'forelsket',
+    language: 'Norwegian',
+    description: 'the euphoria experienced as you begin to fall in love',
+  },
+  {
+    word: 'commuovere',
+    language: 'Italian',
+    description: 'a heartwarming story that moved you to tears',
+  },
+  {
+    word: 'depaysement',
+    language: 'French',
+    description: 'the feeling that comes from not being in one’s home country',
+  },
+  {
+    word: 'duende',
+    language: 'Spanish',
+    description: 'a work of art’s mysterious power to deeply move a person',
+  },
+  {
+    word: 'goya',
+    language: 'Urdu',
+    description:
+      'the moment when fantasy is so realistic that it temporarily becomes reality',
+  },
+  {
+    word: 'hyggelig',
+    language: 'Danish',
+    description: 'a delightfully cozy, intimate moment or thing',
+  },
+  {
+    word: 'jijivisha',
+    language: 'Hindi',
+    description: 'the strong, eternal desire to live and to continue living',
+  },
+  {
+    word: 'wabi-sabi',
+    language: 'Japanese',
+    description: 'accepting the natural cycle of growth and decay',
+  },
 ];
 
 const randomizedProphecies = [
@@ -127,6 +239,51 @@ const randomizedProphecies = [
   {
     title: 'Wait',
     content: 'The day will come…',
+  },
+  {
+    title: 'Live well',
+    content: 'You only live once, but if you do it right, once is enough',
+  },
+  {
+    title: 'Be truthful',
+    content:
+      'It is better to be hated for what you are than to be loved for what you are not',
+  },
+  {
+    title: 'Trust yourself',
+    content: 'Everything you can imagine is real',
+  },
+  {
+    title: 'Keep it simple',
+    content:
+      'Sometimes the questions are complicated and the answers are simple',
+  },
+  {
+    title: 'Creation',
+    content:
+      'Life is not about finding yourself. Life is about creating yourself',
+  },
+  {
+    title: 'It gets tough',
+    content: 'Things change. And friends leave. Life does not stop for anybody',
+  },
+  {
+    title: 'Let it go',
+    content:
+      'You cannot swim for new horizons until you have courage to lose sight of the shore',
+  },
+  {
+    title: 'Look up',
+    content: 'Only when it is dark enough can you see the stars',
+  },
+  {
+    title: 'Hope is alive',
+    content:
+      'Never lose hope. Storms make people stronger and never last forever',
+  },
+  {
+    title: 'Do it',
+    content: 'In a time of destruction, create something',
   },
 ];
 
