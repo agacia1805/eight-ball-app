@@ -17,7 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${inter.className} justify-evenly flex min-h-screen flex-col items-center`}>
+      <body
+        className={`${inter.className} flex min-h-screen flex-col items-center justify-evenly`}
+      >
         <div className='flex flex-grow flex-col justify-center'>{children}</div>
         <Footer />
       </body>
