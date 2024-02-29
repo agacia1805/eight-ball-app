@@ -16,7 +16,7 @@ export default function Prophecy({
   prophecies: RandomizedProphecy[];
   isBallClicked?: boolean;
   ballClickCount?: number;
-  ballClickCount?: boolean;
+  isShaking?: boolean;
 }) {
   const randomProphecy = useMemo(() => {
     if (isBallClicked && !isShaking) return getRandomElement(prophecies);
