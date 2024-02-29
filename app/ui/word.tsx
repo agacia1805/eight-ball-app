@@ -11,14 +11,16 @@ export default function Word({
   words,
   isBallClicked,
   ballClickCount,
+  isShaking
 }: {
   words: RandomizedWord[];
   isBallClicked?: boolean;
   ballClickCount?: number;
+  isShaking?: boolean;
 }) {
   const randomWord = useMemo(() => {
-    if (isBallClicked) return getRandomElement(words);
-  }, [ballClickCount, isBallClicked]);
+    if (isBallClicked && !isShaking) return getRandomElement(words);
+  }, [ballClickCount, isBallClicked, isShaking]);
 
   if (!randomWord) return null;
 
