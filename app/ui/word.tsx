@@ -11,7 +11,7 @@ export default function Word({
   words,
   isBallClicked,
   ballClickCount,
-  isShaking
+  isShaking,
 }: {
   words: RandomizedWord[];
   isBallClicked?: boolean;
