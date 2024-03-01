@@ -2,6 +2,9 @@
 
 import { motion } from 'framer-motion';
 import React, { ReactNode, ReactElement, useState } from 'react';
+import { Rajdhani } from 'next/font/google';
+
+const rajdhani = Rajdhani({ weight: ['400', '700'], subsets: ['latin'] });
 
 export default function Ball({
   children,
@@ -16,7 +19,7 @@ export default function Ball({
 
   const shake = () => {
     setIsShaking(true);
-    setTimeout(() => setIsShaking(false), 700);
+    setTimeout(() => setIsShaking(false), 800);
   };
 
   const handleBallClick = () => {
@@ -27,20 +30,23 @@ export default function Ball({
 
   const childArray = React.Children.toArray(children);
 
- const earthquakeVariants = {
+  const earthquakeVariants = {
     shaking: {
-      x: [-25, 25, -25, 25, 0],
-      y: [45, -45, 45, -45, 0],
+      x: [-45, 45, 0, 45, 0],
+      y: [45, -45, 0, -45, 0],
       transition: {
-                          duration: 0.7,
-                          ease: [0, 0.71, 0.2, 1.01],
-                          scale: {
-                            type: "spring",
-                            damping: 5,
-                            stiffness: 100,
-                            restDelta: 0.001
-                          }
-                        },
+        duration: 0.8,
+        scale: {
+          type: 'spring',
+          damping: 1,
+          stiffness: 0,
+          restDelta: 0.001,
+        },
+      },
+    },
+    initial: {
+      x: 0,
+      y: 0,
     },
   };
 
@@ -51,15 +57,16 @@ export default function Ball({
         onClick={() => {
           if (!isShaking) handleBallClick();
         }}
-             animate={isShaking ? "shaking" : ""}
-                     variants={earthquakeVariants}
+        animate={isShaking ? 'shaking' : 'initial'}
+        variants={earthquakeVariants}
       >
+      {!isBallClicked && <span className={`${rajdhani.className} text-center text-white text-3xl font-semibold md:text-5xl`}>Click to shake</span>}
         {React.Children.map(childArray, (child: ReactNode) => {
           if (React.isValidElement(child)) {
             return React.cloneElement(child as ReactElement, {
               isBallClicked,
               ballClickCount,
-              isShaking
+              isShaking,
             });
           }
           return child;
